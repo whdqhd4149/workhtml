@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그린대학교 학사관리시스템</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            width: 100%;
+        }
+
+        .top-nav {
+            background-color: #004085; /* 진한 파란색 */
+            height: 40px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .top-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            margin-left: 20px;
+        }
+        
+        .main-header {
+            background-color: #2c3e50; /* 어두운 남색 */
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            height: 50px; /* 로고 이미지 높이 조절 */
+        }
+
+
+            * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .main-content {
+        width: 270px;
+        height: 1300px; /* 또는 필요한 다른 높이 */
+        margin-top: 0;
+        margin-left: 360px;
+        background-color: #f0f0f0; /* Light gray background */
+        border: 1px solid #ddd;
+        border-left: 1px solid #c0c0c0;
+        padding: 20px; /* Add some padding inside the content box */
+    }
+
+    .menu-section {
+        margin-bottom: 25px; /* Space between main sections */
+    }
+
+    .menu-title {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333; /* Darker color for titles */
+        display: flex; /* Use flexbox to align icon and text */
+        align-items: center; /* Vertically center icon with text */
+    }
+
+    .menu-icon {
+        width: 20px; /* Adjust icon size as needed */
+        height: 20px;
+        margin-right: 8px; /* Space between icon and text */
+        vertical-align: middle; /* Align image nicely with text */
+    }
+
+    .menu-section ul {
+        list-style: none; /* Remove default bullet points */
+        padding-left: 15px; /* Indent sub-items */
+    }
+
+    .menu-section ul li {
+        margin-bottom: 8px; /* Space between list items */
+        font-size: 0.95em;
+        color: #555; /* Slightly lighter color for list items */
+        position: relative; /* For custom bullet positioning */
+        padding-left: 12px; /* Make space for the custom dot */
+    }
+
+    .menu-section ul li::before {
+        content: "•"; /* Use a smaller, custom dot */
+        font-size: 0.7em; /* Make the dot even smaller */
+        color: #555; /* Color of the dot */
+        position: absolute;
+        left: 0; /* Position the dot at the beginning of the padding */
+        top: 50%; /* Vertically center */
+        transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    }
+
+    
+        
+        .footer {
+            width: 1920px;
+            height: 60px;
+            top: 1420px;
+            background-color: rgba(25, 32, 45, 1);
+            color: #ecf0f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+        <div class="header">
+            <div class="top-nav">
+                <a href="#">HOME</a>
+                <a href="#">사이트맵</a>
+                <a href="#">로그아웃</a>
+                </div>
+                <div class="main-header">
+                <img src="./images/admin_logo.png" alt="그린대학교 학사관리시스템 로고" class="logo">
+            </div>
+        </div>
+
+        <div class="main-content">
+        <div class="menu-section">
+            <div class="menu-title">
+                <img src="./images/ico-admin-setting.png" alt="환경설정 아이콘" class="menu-icon"> 환경설정
+            </div>
+            <ul>
+                <li>기본환경정보</li>
+                <li>약관관리</li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-title">
+                <img src="./images/ico-admin-academic.png" alt="학사운영 아이콘" class="menu-icon"> 학사운영
+            </div>
+            <ul>
+                <li>교육 운영 현황</li>
+                <li>학년별 학생 현황</li>
+                <li>학과별 학생 현황</li>
+                <li>강의 목록</li>
+                <li>수강 현황</li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-title">
+                <img src="./images/ico-admin-persons.png" alt="인사관리 아이콘" class="menu-icon"> 인사관리
+            </div>
+            <ul>
+                <li>학생 목록 및 등록</li>
+                <li>교수 목록 및 등록</li>
+                <li>임직원 목록 및 등록</li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-title">
+                <img src="./images/ico-admin-college.png" alt="대학 및 학과 아이콘" class="menu-icon"> 대학 및 학과
+            </div>
+            <ul>
+                <li>대학 및 학과 목록</li>
+                <li>대학 및 학과 등록</li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-title">
+                <img src="./images/ico-admin-board.png" alt="게시판관리 아이콘" class="menu-icon"> 게시판관리
+            </div>
+            <ul>
+                <li>입학안내 공지사항</li>
+                <li>학사안내 공지사항</li>
+                <li>커뮤니티 공지사항</li>
+                <li>입학상담</li>
+                <li>질문 및 답변</li>
+                <li>식단안내</li>
+                <li>자료실</li>
+            </ul>
+        </div>
+    </div>
+
+    
+
+
+
+    <div class="footer">
+    <span>Copyright ©Eline University. All rights reserved. ADMINISTRATION Version 5.8.1</span>
+    </div>
+
+
+
+
+</body>
+</html>
