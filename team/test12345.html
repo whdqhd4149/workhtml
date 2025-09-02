@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .heading4{
+            height: 24px;
+            width: 930px;
+            margin-bottom: 5px;
+        }
+
+        .heading4 div{
+            position: relative;
+            font-weight: 500;
+            display: inline-block;
+            height: 20px;
+            font-size: 18px;
+            color: #145074;
+            top: -1px;
+            left: 3px;
+        }
+        /* .q{
+            width: 30px;
+            height: 30px;
+            background: rgba(50, 130, 211, 1);
+            font-weight: 350;
+            font-size: 16px;
+            text-align: center;
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .a{
+            width: 30.38px;
+            height: 30px;
+            top: 18px;
+            left: 10px;
+            background: rgba(153, 153, 153, 1);
+            font-weight: 350;
+            font-size: 16px;
+            text-align: center;
+            color: rgba(255, 255, 255, 1);
+        } */
+    
+    /* ====== FAQ 전용 오버라이드 (공통 CSS 보존) ====== */
+        .faq-table{
+        width: 930px;            /* 기존 department-table 폭과 동일 */
+        margin-left: 60px;       /* 디자인 맞춤 */
+        border-collapse: collapse;
+        border-top: 3px solid #071F48;   /* 섹션 시작 굵은 줄 */
+        }
+
+        /* 칸선 제거 + 아래쪽 선만 */
+        .faq-table th,
+        .faq-table td{
+        border: none;            /* 공통의 테두리 초기화 */
+        border-bottom: 1px solid #DEDEDE;   /* 아래쪽만 */
+        height: 50px;
+        vertical-align: middle;
+        font-size: 15px;
+        }
+
+        /* Q/A 라벨 셀 */
+        .faq-table th{
+        width: 44px;
+        text-align: center;
+        font-weight: 700;
+        color: #145074;
+        }
+
+        /* 행 스타일 */
+        .faq-table tr.a td,
+        .faq-table tr.a th{
+        background: #F6F6F6;     /* 답변줄 연한 회색 배경 */
+        }
+
+        /* 마지막 줄 하단선은 공통 보더 유지(보기 깔끔) — 필요없으면 아래 주석 해제
+        .faq-table tr:last-child th,
+        .faq-table tr:last-child td{ border-bottom: 0; }
+        */
+
+      
+
+
+    </style>
+</head>
+        <main class="content">
+            <h2>자주묻는질문</h2>
+            <hr style="border: none; border-top: 3px solid #000; margin: 5px 0 20px 0;">
+            
+            <div class="heading4">
+                <img src="./images/bullet-h4.png" alt="">
+                <div>휴·복학 관련</div>
+            </div>
+            <!-- <hr style="border: none; border-top: 2px solid #000; margin: 5px 0 20px 0;"> -->
+
+            <table class="">
+                <tr>
+                    <td>Q</td>
+                    <td>일반휴학 연장은 몇 학기까지 가능한가요?</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>휴학연장은 1회에 2학기 가능하고 총 6학기 휴학 가능합니다.</td>
+                </tr>
+                <tr>
+                    <td>Q</td>
+                    <td>복학하려고 하는데 어떻게 신청하나요?</td>
+                </tr>
+                <tr>
+                    <td>Q</td>
+                    <td>등록금 납부해서 등록 후 일반 휴학 가능한가요? 환불은 언제 되나요?</td>
+                </tr>
+                <tr>
+                    <td>Q</td>
+                    <td>군휴학 내려면 입영통지서 말고 어떤 서류가 필요하나요?</td>
+                </tr>
+                
+            </table>
+
+
+            <div class="heading4">
+                <img src="./images/bullet-h4.png" alt="">
+                <div>교과 및 학사 관련</div>
+            </div>
+            <table class="">
+                <tr>
+                    <td>Q</td>
+                    <td>학과별 교과과정과 학사안내를 확인하고 싶은데, 어떻게 확인할 수 있나요?</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td >홈페이지 내 대학요람(대학생활 안내)를 통해 해당 입학년도, 해당학과의 교과과정과 학사안내를 확인하세요.</td>
+                </tr>
+                <tr>
+                    <td>Q</td>
+                    <td>복수전공 취소 또는 부전공 전환 신청은 어떻게 하나요?</td>
+                </tr>
+                <tr>
+                    <td>Q</td>
+                    <td>수강신청은 어떻게 하나요?</td>
+                </tr>
+
+
+            </table>
+
+            <div class="heading4">
+                <img src="./images/bullet-h4.png" alt="">
+                <div>수강신청 관련</div>
+            </div>
+            <table class="">
+                <tr>
+                    <td>Q</td>
+                    <td>4학년 2학기에도 최소 12학점을 수강해야 하나요?</td>
+                </tr>
+                <tr>
+                    <td>Q</td>
+                    <td>9학기 이상 등록자는 수강신청학점에 따라 등록금이 달라지나요?</td>
+                </tr>
+                <tr>
+                    <td>Q</td>
+                    <td>수강 신청은 어떻게 하나요?</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>수강신청 안내를 참고하시기 바랍니다.</td>
+                </tr>
+
+            </table>
+
+
+
+        </main>
+</body>
+</html>
